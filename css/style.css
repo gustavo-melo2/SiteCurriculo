@@ -144,12 +144,21 @@ header nav ul li a:hover{
     height: 30px;
     border-radius: 50%;
 }
-.box-tres-pontos .aceso{
-    background-color: #96AEDA;
-}
 .box-tres-pontos .apagado{
     background-color: #C4C4C4;
 }
+
+.box-tres-pontos .aceso{
+    background-color: #96AEDA;
+}
+
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 
 .carrossel{
     display: flex;
