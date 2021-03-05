@@ -255,7 +255,7 @@ header nav ul li a:hover{
 /****************** Experiencia ********************/
 .experiencia{
     width: 100%;
-    padding: 0 0 100px 0;
+    padding: 0 0 150px 0;
     background-image: linear-gradient(to bottom right, #5a6883, #a3bcec);
 }
 
@@ -263,11 +263,69 @@ header nav ul li a:hover{
     width: 100%;
     background-color: #37475F;
     padding: 20px 2%;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .box-text-experiencia p{
     margin-bottom: 20px;
     line-height: 20px;
     font-size: 18px;
     text-align: justify;
+}
+
+/****************** Footer/Contatos ********************/
+
+footer{
+    width: 100%;
+    background-color: #37475F;
+    padding: 20px 0;
+}
+.footer-name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-name hr{
+    width: 200px;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.box-left, .box-right{
+    text-align: center;
+}
+.box-left h2, .box-right h2{
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.box-left ul, .box-right ul{
+    list-style-type: none;
+}
+.box-left ul li a, .box-right ul li{
+    color: #181818;
+    text-decoration: none;
+}
+.box-left ul li a:hover{
+    color: #96AEDA;
+    transition: 0.3s;
+}
+.box-left ul li , .box-right ul li{
+    margin-top: 5px;
+}
+.box-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.box-icons i{
+    font-size: 35px;
+    color: #181818;
+}
+.box-icons i:hover{
+    color: #96AEDA;
+    transition: 0.3s;
 }
