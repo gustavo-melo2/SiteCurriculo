@@ -195,6 +195,25 @@ header nav ul li a:hover{
     margin-top: 15px;
     text-align: initial;
 }
+.box-nvl-conhecimento{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.box-nvl-conhecimento p{
+    color: #37475F;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.box-content-principal{
+    width: 100%;
+    height: 220px;
+}
+/* .box-nvl-conhecimento p:last-of-type{
+    color: #37475F;
+    font-weight: bold;
+} */
 
 /****************** Formação Academica e Certificados ********************/
 
@@ -213,7 +232,6 @@ header nav ul li a:hover{
 }
 .ladoEsquerdo, .ladoDireito{
     width: 50%;
-    height: 300px;
     display: flex;
     padding: 10px 0;
     align-items: center;
@@ -251,6 +269,23 @@ header nav ul li a:hover{
 .box-content-formacao p{
     margin-bottom: 10px;
 }
+.box-content-formacao ul{
+    list-style: none;
+}
+.box-content-formacao ul li{
+    margin-top: 10px;
+}
+.box-content-formacao ul li a{
+    text-decoration: none;
+    color: #8ba1ca;
+}
+
+.box-content-formacao ul li a:hover{
+    color: #b0cbff;
+    transition: 0.3s;
+}
+
+
 
 /****************** Experiencia ********************/
 .experiencia{
