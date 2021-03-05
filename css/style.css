@@ -82,16 +82,21 @@ header nav ul li a:hover{
     display: flex;
     align-items: center;
     background-color: #37475F;
+    justify-content: space-around;
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
     padding: 20px 2%;
 }
 .header-content div{
-    width: 100%;
+    width: 20%;
     border-bottom: 1px solid #FFFFFF;
 }
+
 .header-content h2{
+    text-align: center;
     margin: 0 15px;
     font-weight: normal;
 }
+
 
 .background-competencias{
     width: 100%;
@@ -191,3 +196,60 @@ header nav ul li a:hover{
     text-align: initial;
 }
 
+/****************** Formação Academica e Certificados ********************/
+
+
+.formacaoAcademiaCertificados{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to bottom right, #5a6883, #a3bcec);
+}
+
+.box-formacoes-geral{
+    width: 100%;
+    padding: 20px 2%;
+}
+.box-formacao1, .box-formacao2{
+    width: 100%;
+    display: flex;
+}
+.ladoEsquerdo, .ladoDireito{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+
+}
+.ladoEsquerdo{
+    border-right: 2px solid #181818;
+    flex-direction: row-reverse;
+}
+.ladoEsquerdo > p, .ladoDireito > p{
+    margin: 5px;
+}
+
+.traco{
+    width: 40px;
+    border: 1px solid #111111;
+}
+.box-content-formacao{
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    padding: 20px 5%;
+    background-color: #37475F;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 5px;
+}
+.box-content-formacao h2{
+    text-align: center;
+    font-size: 20px;
+}
+.box-content-formacao hr{
+    margin: 5px 0 10px 0;
+}
+.box-content-formacao p{
+    margin-bottom: 10px;
+}

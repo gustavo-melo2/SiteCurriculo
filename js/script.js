@@ -9,13 +9,10 @@ var indexBalls = 0
 var indexPage = 0
 
 
-function removeShowClass(){
-    for(var i = 0; i < skillsG1.length; i++){
-        if(i < balls.length){
-            balls[i].classList.remove('aceso')
-        }
-        skillsG1[i].classList.remove('show')
-        skillsG2[i].classList.remove('show')
+function removeShowClass(list, showClass){
+    for(var i = 0; i < list.length; i++){
+        list[i].classList.remove(showClass)
+        
     }
 }
 
@@ -39,7 +36,9 @@ btnNext.addEventListener('click', () =>{
         indexPage+=2
     }
 
-    removeShowClass()
+    removeShowClass(skillsG1, 'show')
+    removeShowClass(skillsG2, 'show')
+    removeShowClass(balls, 'aceso')
 
     showNextIndex()
 })
@@ -53,7 +52,9 @@ btnPrevious.addEventListener('click', ()=>{
         indexPage-=2
     }
 
-    removeShowClass()
+    removeShowClass(skillsG1, 'show')
+    removeShowClass(skillsG2, 'show')
+    removeShowClass(balls, 'aceso')
 
     showNextIndex()
 })
