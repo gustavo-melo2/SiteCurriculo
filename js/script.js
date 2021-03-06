@@ -1,6 +1,7 @@
 
-const btnNext = document.querySelector('#next')
-const btnPrevious = document.querySelector('#previous')
+var btnNext = document.querySelector('#next')
+var btnPrevious = document.querySelector('#previous')
+
 const balls = document.querySelectorAll('.apagado') 
 const skillsG1 = document.querySelectorAll('.group1')
 const skillsG2 = document.querySelectorAll('.group2')
@@ -57,4 +58,32 @@ btnPrevious.addEventListener('click', ()=>{
     removeShowClass(balls, 'aceso')
 
     showNextIndex()
+})
+
+// Menu mobile
+
+var icone = document.querySelector('#idIcone');
+var mostrandoMenuMobile = false
+var menuMobile = document.querySelector('#idMenuMobile')
+
+
+setInterval(()=>{
+    if(window.innerWidth > 1020){
+        menuMobile.style.display = "none"
+        mostrandoMenuMobile = false
+    }
+}, 1000)
+
+
+
+icone.addEventListener('click', ()=>{
+    
+    if(mostrandoMenuMobile == false){
+        menuMobile.style.display = "block"
+        mostrandoMenuMobile = true
+    }else{
+        menuMobile.style.display = "none"
+        mostrandoMenuMobile = false
+    }
+
 })

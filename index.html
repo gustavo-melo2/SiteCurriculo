@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Gustavo Henrique Garrido de Melo">
+    <meta name="description" content="Site Currículo">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Currículo - Gustavo Henrique Garrido de Melo</title>
 </head>
@@ -21,13 +23,23 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <div class="icone-menu-mobile"><i id="idIcone" class="fas fa-bars"></i></div>
     </header>
+    <div id="idMenuMobile" class="menu-mobile">
+        <div class="container">
+            <ul>
+                <li> <a href="#sobre">Sobre</a> </li>
+                <li><a href="#competencias">Competencias</a></li>
+                <li><a href="#faec">Formação Academica e Certificados</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
     <main>
         <section id="sobre" class="sobre">
             <div class="container">
-                <div class="img-perfil">
-                    <!-- <img src="img/img-perfil-quebra-galho.jpg" alt="Imagem de perfil"> -->
-                </div>
+                <div class="img-perfil"></div>
                 <div class="text-sobre-container">
                     <h2>Sobre - Resumo</h2>
                     <p>
@@ -47,7 +59,6 @@
             </div>
             <div class="background-competencias">
                 <div class="container">
-                    <div class="box-arrow-left"><i id="previous" class="fas fa-arrow-alt-circle-left"></i></div>
                     <div class="carrossel">
                         <div class="container-duas-competencias">
                             <div class="box-competencia group1 hidden show">
@@ -118,10 +129,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box-tres-pontos">
-                            <div class="apagado aceso"></div>
-                            <div class="apagado"></div>
-                            <div class="apagado"></div>
+                        <div class="carrosel-controller">
+                            <div class="box-arrow-left"><i id="previous" class="fas fa-arrow-alt-circle-left"></i></div>
+                            <div class="box-tres-pontos">
+                                <div class="apagado aceso"></div>
+                                <div class="apagado"></div>
+                                <div class="apagado"></div>
+                            </div>
+                            <div class="box-arrow-right"><i id="next" class="fas fa-arrow-alt-circle-right"></i></div>
                         </div>
                         <div class="container-duas-competencias">
                             <div class="box-competencia group2 hidden show">
@@ -193,8 +208,13 @@
                             </div>
                             
                         </div>
+
+                        
                     </div>
-                    <div class="box-arrow-right"><i id="next" class="fas fa-arrow-alt-circle-right"></i></div>
+                    
+                    
+                    
+                    
                 </div>
                 
             </div>
