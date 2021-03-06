@@ -279,6 +279,9 @@ header nav ul li a:hover{
 .ladoEsquerdo > p, .ladoDireito > p{
     margin: 5px;
 }
+.box-formacao1 > .ladoDireito > p, .box-formacao2 > .ladoEsquerdo > p{
+    display: none;
+}
 
 .traco{
     width: 40px;
@@ -421,12 +424,24 @@ footer{
 }
 
 @media screen and (max-width: 720px){
-    .container-duas-competencias{
+    .container-duas-competencias, .box-formacao1, .box-formacao2{
         flex-direction: column;
         align-items: center;
     }
     .background-competencias{
         background-image: none;
         background-color: #354B72;
+    }
+    .ladoDireito, .ladoEsquerdo{
+        width: 100%;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box-formacao1 > .ladoEsquerdo, .box-formacao2 > .ladoDireito, .traco{
+        display: none;
+    }
+    .box-formacao1 > .ladoDireito > p, .box-formacao2 > .ladoEsquerdo > p{
+        display: block;
     }
 }
