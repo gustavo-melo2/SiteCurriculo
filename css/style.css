@@ -34,13 +34,16 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
 }
-header nav ul li a:hover{
+header nav ul li a:hover, #idIcone:hover{
     color: #96AEDA;
     transition: 0.3s;
 }
 .icone-menu-mobile{
     display: none;
     font-size: 35px;
+}
+#idIcone{
+    cursor: pointer;
 }
 .menu-mobile{
     display: none;
@@ -443,5 +446,19 @@ footer{
     }
     .box-formacao1 > .ladoDireito > p, .box-formacao2 > .ladoEsquerdo > p{
         display: block;
+    }
+}
+@media screen and (max-width: 550px){
+    .footer-content{
+        flex-direction: column;
+    }
+    .box-icons {
+        justify-content: center;
+    }
+    .box-right{
+        margin-top: 50px;
+    }
+    .box-icons .fa-github-square{
+        margin-left: 20px;
     }
 }
