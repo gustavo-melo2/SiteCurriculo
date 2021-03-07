@@ -92,8 +92,9 @@ header nav ul li a:hover, #idIcone:hover{
     width: 350px;
     height: 350px;
     border: 1px solid black;
-    background-image: url("../img/img-perfil-quebra-galho.jpg");
-    background-size: contain;
+    background-image: url("../img/foto-perfil.jpg");
+    background-size: 100%;
+    background-position: center;
     border-radius: 50%;
 }
 .sobre .container .text-sobre-container{
